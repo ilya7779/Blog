@@ -1,0 +1,39 @@
+@mixin headerIcons {
+  width: 84px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  background-color: #2231AA;
+  border: none;
+}
+
+.header__container {
+  width: 100%;
+  height: 84px;
+  display: flex;
+
+  background-color: #2231AA;
+
+  .header__burger {
+    @include headerIcons;
+
+    border-right: 1px solid #5360CD;
+  }
+  .header__searchContainer {
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+  }
+  .header__buttonSearch {
+    @include headerIcons;
+
+    border-left: 1px solid #5360CD;
+    border-right: 1px solid #5360CD;
+  }
+  .header__user {
+    @include headerIcons;
+  }
+}
